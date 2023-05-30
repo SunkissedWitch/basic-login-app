@@ -1,13 +1,12 @@
-import { forwardRef } from 'react'
 import { StyledInput } from "../StyledInput"
 
-export const FormField = forwardRef(({ id, label, ...props }, ref ) => {
+export const FormField = ({ id, label, ...props }) => {
   return (
     <>
       <div>
         <label
           htmlFor={id}
-          className="block text-sm font-medium leading-6 text-gray-900"
+          className="block text-base font-medium leading-6 text-gray-900"
         >
           {label}
         </label>
@@ -17,4 +16,4 @@ export const FormField = forwardRef(({ id, label, ...props }, ref ) => {
       </div>
     </>
   )
-})
+}

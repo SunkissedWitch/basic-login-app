@@ -1,25 +1,31 @@
 "use client"
 
+import { PrimaryButton } from "@/components/Button/button"
 import { FormField } from "@/components/FormField"
 import { Logo } from "@/components/Logo"
 import { PasswordField } from "@/components/PasswordField"
 import { useForm } from 'react-hook-form'
+import { passwordRule, emailRule } from "@/utils/validateRules"
 
 export default function Login() {
   const { register, handleSubmit, formState: { errors } } = useForm({
     defaultValues: {
       email: '',
       password: ''
-    }
+    },
+    reValidateMode: 'onChange'
   })
-  console.log(errors)
+  console.log('errors', errors)
 
-  const onSubmit = (values) => handleSubmit(console.log(values))
+  const onSubmit = (data) => {
+    console.log('data', data)
+  }
+
   return (
-    <div className="flex flex-grow flex-col items-center justify-center">
+    <div className="flex flex-grow flex-col items-center justify-center px-6 lg:px-8">
       {/* <div className="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8"> */}
-        <div className="sm:mx-auto sm:w-full sm:max-w-sm">
-          <div className="w-full before:rounded-xl text-center p-1 before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-slate-700 relative inline-block">
+        <div className="mx-auto w-full max-w-xs sm:max-w-sm">
+          <div className="w-full text-center before:block before:absolute before:bg-slate-700 before:bg-opacity-80 before:-inset-0.5 relative inline-block">
             <Logo />
           </div>
           <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
@@ -27,14 +33,17 @@ export default function Login() {
           </h2>
         </div>
 
-        <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-          <form className="space-y-6" onSubmit={onSubmit}>
+        <div className="mt-10 mx-auto w-full max-w-xs sm:max-w-sm">
+          <form className="space-y-3" onSubmit={handleSubmit(onSubmit)}>
             <FormField 
               label={'Email address'}
               id={'email'}
               type={'email'}
               autoComplete='email'
-              {...register('email', { required: { value: true, message: 'Please, enter your email'}})}
+              register={register}
+              required={{ value: true, message: 'Please enter your email'}}
+              rules={emailRule}
+              error={errors?.email}
             />
 
             <PasswordField
@@ -44,15 +53,13 @@ export default function Login() {
               autoComplete='current-password'
               forgotQuestion
               restorePasswordLink='#'
-              {...register('password', { required: { value: true, message: 'Please enter your password'}})}
+              register={register}
+              required={{ value: true, message: 'Please enter your password'}}
+              rules={passwordRule}
+              error={errors?.password}
             />
-            <div>
-              <button
-                type="submit"
-                className="flex w-full justify-center rounded-md bg-sky-600 px-3 py-3 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-sky-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600"
-              >
-                Sign in
-              </button>
+            <div className='pt-6'>
+              <PrimaryButton type='submit' title={'Sign in'} />
             </div>
           </form>
         </div>

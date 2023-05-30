@@ -1,16 +1,14 @@
-import { forwardRef } from 'react'
 import Link from "next/link"
 import { StyledInput } from "../StyledInput"
 
-export const PasswordField = forwardRef(({ id, label, forgotQuestion = false, restorePasswordLink = '#', ...props }, ref) => {
-
+export const PasswordField = ({ id, label, forgotQuestion = false, restorePasswordLink = '#', ...props }) => {
   return (
     <>
       <div>
         <div className="flex items-center justify-between">
           <label
             htmlFor={id}
-            className="block text-sm font-medium leading-6 text-gray-900"
+            className="block text-base font-medium leading-6 text-gray-900"
           >
             {label}
           </label>
@@ -26,9 +24,9 @@ export const PasswordField = forwardRef(({ id, label, forgotQuestion = false, re
           }
         </div>
         <div className="mt-2 focus-visible:outline-none">
-          <StyledInput id={id} {...props} ref={ref} />
+          <StyledInput id={id} {...props} />
         </div>
       </div>
     </>
   )
-})
+}
