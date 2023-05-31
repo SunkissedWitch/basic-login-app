@@ -1,0 +1,34 @@
+{
+  "data":
+    [
+      {
+        "id": 1,
+        "user_name": "Anna",
+        "user_avatar": "",
+        "email": "anna8test@mail.com",
+        "password": "nana8NOT-hohoho"
+      },
+      {
+        "id": 2,
+        "user_name": "Victoriia",
+        "user_avatar": "",
+        "email": "vicky12test@mail.com",
+        "password": "verySequry13hat"
+      },
+      {
+        "id": 3,
+        "user_name": "Sergio",
+        "user_avatar": "",
+        "email": "serg12test@mail.com",
+        "password": "notSQLove90js"
+      },
+      {
+        "id": 4,
+        "user_name": "Dmytro",
+        "user_avatar": "",
+        "email": "dmytro-team@mail.com",
+        "password": "bavovna514Belg"
+      }
+    ],
+  "count": 4
+}
