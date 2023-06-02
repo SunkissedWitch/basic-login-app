@@ -6,7 +6,7 @@ import { Logo } from "@/components/Logo";
 import { PasswordField } from "@/components/PasswordField";
 import { useForm } from "react-hook-form";
 import { passwordRule, emailRule } from "@/utils/validateRules";
-import axios from "axios";
+import { axios } from "@/utils/axiosInstance";
 
 export default function Login() {
   const {
@@ -26,15 +26,13 @@ export default function Login() {
   const onSubmit = async (data) => {
     console.log("data", data);
     try {
-      const response = await axios.post("http://localhost:3000/login/api", {
-        data,
-      });
-      console.log("response", response);
+      const response = await axios.post("/login/api", { data }, { withCredentials: true });
+      console.log('response', response)
     } catch (error) {
-      console.error("onSubmit [error]:", error?.message);
+      console.error("onSubmit [error]:", error);
       setError("root.serverError", {
         type: error?.response?.status,
-        message: error?.response?.statusText,
+        message: error?.response?.data?.error || "uncorrect email or password",
       });
     }
   };
@@ -51,6 +49,11 @@ export default function Login() {
       </div>
 
       <div className="mt-10 mx-auto w-full max-w-xs sm:max-w-sm">
+        {errors?.root?.serverError && (
+          <div className="flex flex-row items-center py-2 px-3 mb-6 text-red-500 bg-red-100 border border-red-300 rounded-sm">
+            {errors?.root?.serverError?.message}
+          </div>
+        )}
         <form className="space-y-3" onSubmit={handleSubmit(onSubmit)}>
           <FormField
             label={"Email address"}

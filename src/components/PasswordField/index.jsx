@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { StyledInput } from "../StyledInput"
+import { StyledPasswordInput } from "../StyledPasswordInput"
 
 export const PasswordField = ({ id, label, forgotQuestion = false, restorePasswordLink = '#', ...props }) => {
   return (
@@ -24,7 +24,7 @@ export const PasswordField = ({ id, label, forgotQuestion = false, restorePasswo
           }
         </div>
         <div className="mt-2 focus-visible:outline-none">
-          <StyledInput id={id} {...props} />
+          <StyledPasswordInput id={id} {...props} />
         </div>
       </div>
     </>

@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import userIcon from '../../../public/user-solid.svg';
+import { UserIcon } from '../Icons/UserIcon';
 
 export const User = ({ user }) => {
   return (
@@ -8,13 +8,10 @@ export const User = ({ user }) => {
         {
           user?.avatar
           ? <Image src={user.avatar} height={40} width={40} />
-          : <Image
-            src={userIcon}
-            alt='U'
-            className='dark:invert'
+          : <UserIcon
+            className='fill-yellow-400 opacity-80'
             width={24}
             height={24}
-            priority
           />
         }
       </div>

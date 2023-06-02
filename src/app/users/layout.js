@@ -1,8 +1,8 @@
 import { Navbar } from "@/components/Navbar"
 
 export const metadata = {
-  title: 'Login',
-  description: 'Authorize to continue',
+  title: 'Users',
+  description: 'See authorized users',
 }
 
 export default function NavbarLayout({ children }) {
