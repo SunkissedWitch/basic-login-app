@@ -40,7 +40,7 @@ export default function Login() {
   return (
     <div className="flex flex-grow flex-col items-center justify-center px-6 lg:px-8">
       <div className="mx-auto w-full max-w-xs sm:max-w-sm">
-        <div className="w-full text-center before:block before:absolute before:bg-slate-700 before:bg-opacity-80 before:-inset-0.5 relative inline-block">
+        <div className="w-full text-center before:block before:absolute before:bg-slate-700 before:bg-opacity-40 before:-inset-1.5 before:rounded-full before:rounded-bl-none relative inline-block">
           <Logo />
         </div>
         <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900 cursor-default">
@@ -48,7 +48,7 @@ export default function Login() {
         </h2>
       </div>
 
-      <div className="mt-10 mx-auto w-full max-w-xs sm:max-w-sm">
+      <div className="mt-10 mx-auto w-full max-w-xs sm:max-w-sm sm:border border-neutral-200 border-opacity-40 shadow-neutral-200 sm:shadow-lg rounded-md p-4 sm:p-6 md:p-8 lg:p-10">
         {errors?.root?.serverError && (
           <div className="flex flex-row items-center py-2 px-3 mb-6 text-red-500 bg-red-100 border border-red-300 rounded-sm">
             {errors?.root?.serverError?.message}
