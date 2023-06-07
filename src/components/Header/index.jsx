@@ -44,35 +44,8 @@ export const Header = () => {
         ))}
       </div>
       <div className='flex-grow md:flex-grow-0'>
-        <button className='rounded-lg bg-[#f9a226] flex flex-row justify-center items-center py-2 px-4 text-white text-opacity-100  hover:text-opacity-95 hover:bg-[#e5931d] transition-all ms-auto'>Log Out</button>
+        <button className='rounded-lg bg-bOrange-500 flex flex-row justify-center items-center py-2 px-4 text-white text-opacity-100  hover:text-opacity-95 hover:bg-bOrange-400 transition-all ms-auto'>Log Out</button>
       </div>
-      {/* <div className="md:hidden group/menu">
-        <button className='rounded-lg flex flex-row justify-center items-center py-2 px-4 text-white text-opacity-100  hover:text-opacity-95 transition-all'>Menu</button>
-        <div className="hidden group-hover/menu:flex flex-col justify-between absolute right-0  bg-neutral-100 text-sky-800 shadow-sm shadow-neutral-400 rounded-lg rounded-tr-none">
-        {times(categories.length, (upTime) => (
-          <div className="group/navigation relative w-[10rem] first:rounded-t-lg first:rounded-tr-none last:rounded-b-lg hover:text-neutral-950 hover:bg-neutral-500 hover:bg-opacity-30" key={`category-${categories[upTime].title}-${upTime + 1}`}>
-            <div
-              className='group-hover/navigation:block hidden absolute top-3 right-[10rem] bg-neutral-100 text-sky-800 shadow-sm shadow-neutral-400 rounded-lg rounded-tr-none'
-            >
-              <ul className='min-w-max'>
-                {times(categories[upTime].subCategories.length, (subTime) => (
-                  <li
-                    key={`subcategory-${categories[upTime].subCategories[subTime].title}-${upTime}-${subTime}`}
-                    className='flex first:rounded-t-lg first:rounded-tr-none last:rounded-b-lg hover:text-neutral-950 hover:bg-neutral-500 hover:bg-opacity-30'>
-                    <Link href={categories[upTime].subCategories[subTime].href} className="px-4 py-2">
-                      {categories[upTime].subCategories[subTime].title} {subTime + 1}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <Link href={'/'} className='px-2.5 py-2 flex flex-row items-center justify-center flex-wrap'>
-              {categories[upTime].title} {upTime + 1}
-            </Link>
-          </div>
-        ))}
-        </div>
-      </div> */}
     </header>
   )
 }
