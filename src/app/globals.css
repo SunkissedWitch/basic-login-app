@@ -25,3 +25,33 @@ body {
     ) */
     /* rgb(var(--background-start-rgb)); */
 }
+.header-section__bg {
+  background-image: url('../static/BGShapes/Bg_Shape.svg');
+  background-size: calc(100vw - 50%);
+  background-position-x: calc(50vw - 7%);
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-clip: inherit;
+}
+.header-section__bg-mobile {
+  background-image: none;
+}
+@media (max-width: 640px) {
+  .header-section__bg {
+    background-image: none;
+  }
+  .header-section__bg-mobile {
+    background-image: url('../static/BGShapes/Bg_Shape.svg');
+    background-size: calc(100vw + 10%);
+    background-position-x: center;
+    background-position-y: 2rem;
+    background-repeat: no-repeat;
+    background-clip: padding-box;
+  }
+}
+@media (min-width: 1024px) {
+  .header-section__bg {
+    background-size: contain;
+    background-position-x: 50vw;
+  }
+}

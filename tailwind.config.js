@@ -35,6 +35,11 @@ module.exports = {
         'bOrange-800': '#63400f',
         'bOrange-900': '#312007',
         'bOrange-950': '#181003',
+      },
+      fontSize: {
+        'hero-desktop': ['3.125rem' /* 50px */, { lineHeight: '4rem' /* 64px */ }],
+        'hero-tablet': ['2rem' /* 32px */, { lineHeight: '2.75rem' /* 44px */ }],
+        'hero-mobile': ['1.75rem' /* 28px */, { lineHeight: '2.375rem'/* 38px */ }]
       }
     },
   },
