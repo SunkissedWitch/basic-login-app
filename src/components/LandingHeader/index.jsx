@@ -29,7 +29,7 @@ const Header = () => {
               with Great Research
             </article>
             <div className="flex flex-col gap-7 my-10 sm:my-0 px-[10%] sm:px-0">
-              <div className='text-lg font-medium text-neutral-950'>
+              <div className='text-base md:text-xl font-medium text-neutral-950'>
                 Capture any touchpoint along the customer journey and unearth context-rich insights that pave the way for exceptional experiences
               </div>
               <RequestDemoButton />
