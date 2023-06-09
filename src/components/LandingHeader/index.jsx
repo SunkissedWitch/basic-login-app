@@ -19,8 +19,8 @@ const Header = () => {
             with Great Research
           </article>
         </div>
-        <div className='flex flex-row flex-wrap-reverse container mx-auto sm:py-10'>
-          <div className='flex-[0_0_100%] sm:flex-[1_0_60%] md:flex-[1_0_50%] flex flex-col gap-9 justify-end items-start sm:pr-3 p-0'>
+        <div className='flex flex-row flex-wrap-reverse sm:flex-nowrap container mx-auto sm:py-10 gap-x-3'>
+          <div className='flex-[0_0_100%] sm:flex-auto flex flex-col gap-9 justify-end items-start p-0'>
             <article className={poppins.className.concat(' ', 'hidden sm:inline-block sm:text-hero-mobile md:text-hero-tablet xl:text-hero-desktop font-bold text-neutral-950')}>
               Great <span className='text-sky-500'>Customer</span>
               <br/>
@@ -35,7 +35,7 @@ const Header = () => {
               <RequestDemoButton />
             </div>
           </div>
-          <div className='w-full flex-[0_0_100%] sm:flex-[0_0_40%] md:flex-[0_0_50%] flex justify-center items-center'>
+          <div className='w-full flex-[0_0_100%] sm:flex-initial flex justify-center sm:justify-end items-center'>
             {/* <Carousel /> */}
             <Image
               src={caroselPlaceholder}
