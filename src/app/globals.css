@@ -55,3 +55,15 @@ body {
     background-position-x: 50vw;
   }
 }
+.section-2__bg {
+  background-image: url('../static/BGShapes/Section_2.svg');
+  background-size: contain;
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+}
+@media (min-width: 640px) {
+  .section-2__bg {
+    background-position-x: right;
+  }
+}

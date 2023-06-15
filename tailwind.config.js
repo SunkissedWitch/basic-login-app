@@ -15,6 +15,7 @@ module.exports = {
       colors: {
         'main-text': '#1C1C1C',
         'bBlue-light': '#f0faff',
+        'bOrange-accent': '#FFAF00',
         'main-blue': '#0090CF',
         'bBlue-50': '#e5f3fa',
         'bBlue-100': '#cce8f5',
