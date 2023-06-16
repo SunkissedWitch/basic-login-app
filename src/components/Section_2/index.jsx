@@ -1,7 +1,7 @@
 import Image from "next/image";
 import mockupPhone from 'src/static/mockup.png'
 import arrow from 'src/static/BGShapes/Arrow.svg'
-import { IPhoneIcon } from "../Icons/iPhoneIcon";
+import { IPhoneIcon } from "../Icons/IPhoneIcon";
 
 const Section2 = () => {
   return (
