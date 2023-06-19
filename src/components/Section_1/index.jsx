@@ -30,7 +30,7 @@ const stepper = [
 
 const Section1 = () => {
   return (
-    <section className="w-full section-1__bg sm:px-10 mt-24">
+    <section className="w-full section-1__bg sm:px-10">
       <div className="container mx-auto lg:hidden">
         <header className='lg:hidden flex justify-center px-24 md:text-xl font-bold text-center'>
           Go Where Your Customers Go And Experience What They Experience

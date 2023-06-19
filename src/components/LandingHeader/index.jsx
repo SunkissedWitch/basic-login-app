@@ -9,7 +9,7 @@ const poppins = Poppins({ subsets: ['latin'], weight: '700' })
 const Header = () => {
   return (
     <>
-      <section className='w-full overflow-x-clip header-section__bg sm:px-10'>
+      <section className='w-full mt-8 overflow-x-clip header-section__bg sm:px-10'>
         <div className="inline-block sm:hidden w-full px-[10%] pt-10">
           <article className={poppins.className.concat(' ', 'inline-block text-neutral-950 text-hero-mobile')}>
             Great <span className='text-sky-500'>Customer</span>

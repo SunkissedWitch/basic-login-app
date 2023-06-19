@@ -5,7 +5,7 @@ import { IPhoneIcon } from "../Icons/IPhoneIcon";
 
 const Section2 = () => {
   return (
-    <section className="w-full mt-24 px-[10%] sm:px-10">
+    <section className="w-full px-[10%] sm:px-10">
       <div className="container mx-auto flex flex-col sm:flex-row gap-x-3 justify-between sm:items-stretch">
         <div className="flex flex-col py-8 pb-14 md:py-16 flex-auto sm:max-w-[330px] lg:max-w-[400px] xl:max-w-[450px] gap-y-2 md:gap-y-4">
           <div className='w-12 h-12 p-2.5 rounded flex flex-row justify-center items-center bg-bOrange-accent bg-opacity-5'>
