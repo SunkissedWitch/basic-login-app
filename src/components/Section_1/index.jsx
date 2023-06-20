@@ -30,9 +30,9 @@ const stepper = [
 
 const Section1 = () => {
   return (
-    <section className="w-full section-1__bg sm:px-10">
+    <section className="w-full section-1__bg px-[5.75%] sm:px-10 ">
       <div className="container mx-auto lg:hidden">
-        <header className='lg:hidden flex justify-center px-24 md:text-xl font-bold text-center'>
+        <header className='lg:hidden flex justify-center w-full px-[5.75%] sm:px-10 md:text-xl font-bold text-center'>
           Go Where Your Customers Go And Experience What They Experience
         </header>
       </div>
