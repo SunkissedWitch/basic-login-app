@@ -12,7 +12,7 @@ export const Header = () => {
   })
 
   return (
-    <header className='w-full bg-bBlue-500 text-white py-5 px-2.5 sm:px-5 md:px-7'>
+    <header className='w-full bg-main-blue text-white py-5 px-2.5 sm:px-5 md:px-7'>
       <div className='container mx-auto flex flex-row justify-between items-center'>
         <div className='px-4 py-2'>
           <p className='text-xl font-bold tracking-wider drop-shadow-[0_0_4px_rgba(225,225,225,0.5)] font-mono leading-none text-slate-100 antialiased m-0 cursor-default'>
