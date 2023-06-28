@@ -39,6 +39,8 @@ const Header = () => {
             {/* <Carousel /> */}
             <Image
               src={caroselPlaceholder}
+              priority={true}
+              placeholder='blur'
               alt="caroselPlaceholder"
               className="hidden lg:block"
             />

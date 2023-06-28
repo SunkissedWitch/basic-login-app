@@ -1,7 +1,7 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin', 'cyrillic'] })
+const inter = Inter({ subsets: ['latin'], display: 'swap' })
 
 export const metadata = {
   title: 'Create Next App',
@@ -11,8 +11,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className + ' ' + 'flex flex-col justify-between items-center min-h-screen'}>
-        {children}
+      <body className={inter.className}>
+        <div className='flex flex-col justify-between items-center min-h-screen'>
+          {children}
+        </div>
       </body>
     </html>
   )
