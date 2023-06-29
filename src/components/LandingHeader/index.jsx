@@ -1,31 +1,28 @@
 import Image from "next/image";
 import { RequestDemoButton } from "../RequestDemoButton";
-import caroselPlaceholder from '../../static/Content.png'
-import mobileCarouselPlaceholder from '../../static/Cards.png'
-import { Poppins } from 'next/font/google'
-// import { Carousel } from "../Carousel";
-const poppins = Poppins({ subsets: ['latin'], weight: '700' })
+import caroselPlaceholder from '../../static/Content.png';
+import mobileCarouselPlaceholder from '../../static/Cards.png';
 
 const Header = () => {
   return (
     <>
       <section className='w-full mt-8 overflow-x-clip header-section__bg sm:px-10'>
         <div className="inline-block sm:hidden w-full px-[10%] pt-10">
-          <article className={poppins.className.concat(' ', 'inline-block text-neutral-950 text-hero-mobile')}>
+          <article className='font-poppins inline-block text-neutral-950 text-hero-mobile'>
             Great <span className='text-sky-500'>Customer</span>
-            <br/>
+            <br />
             Experiences Starts
-            <br/>
+            <br />
             with Great Research
           </article>
         </div>
         <div className='flex flex-row flex-wrap-reverse sm:flex-nowrap container mx-auto sm:py-10 gap-x-3'>
           <div className='flex-[0_0_100%] sm:flex-auto flex flex-col gap-9 justify-end items-start p-0'>
-            <article className={poppins.className.concat(' ', 'hidden sm:inline-block sm:text-hero-mobile md:text-hero-tablet xl:text-hero-desktop font-bold text-neutral-950')}>
+            <article className='font-poppins hidden sm:inline-block sm:text-hero-mobile md:text-hero-tablet xl:text-hero-desktop font-bold text-neutral-950'>
               Great <span className='text-sky-500'>Customer</span>
-              <br/>
+              <br />
               Experiences Starts
-              <br/>
+              <br />
               with Great Research
             </article>
             <div className="flex flex-col gap-7 my-10 sm:my-0 px-[10%] sm:px-0">
