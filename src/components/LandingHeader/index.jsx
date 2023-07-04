@@ -27,7 +27,7 @@ const Header = () => {
             </article>
             <div className="flex flex-col gap-7 my-10 sm:my-0 px-[10%] sm:px-0">
               <div className='text-base md:text-xl font-medium text-neutral-950'>
-                Capture any touchpoint along the customer journey and unearth context-rich insights that pave the way for exceptional experiences
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non lorem sapien. Proin euismod nulla non arcu porta, in morbi.
               </div>
               <RequestDemoButton />
             </div>

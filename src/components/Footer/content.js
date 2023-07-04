@@ -49,25 +49,25 @@ export const linksPart2 = [
 export const addresses = [
   {
     location: 'Europe',
-    address: ['Rue du Cerf 231', '1332 Rixensart', 'Belgium'],
+    address: ['Rue du Cerf 231', '1234 Rixensart', 'Belgium'],
     contacts: [
       {
         type: 'Email',
-        data: 'support@ethosapp.com'
+        data: 'support@loremapp.com'
       }
     ]
   },
   {
     location: 'United States',
-    address: ['680 Main Street #536', 'Stamford, CT 06901'],
+    address: ['123 Main Street #456', 'Stamford, CT 01234'],
     contacts: [
       {
         type: 'Email',
-        data: 'support@ethosapp.com'
+        data: 'support@loremapp.com'
       },
       {
         type: 'Phone',
-        data: '+1 (832) 356-6010'
+        data: '+1 (234) 345-6789'
       }
     ]
   }
@@ -75,10 +75,10 @@ export const addresses = [
 export const contacts = [
   {
     type: 'Email',
-    data: 'support@ethosapp.com'
+    data: 'support@loremapp.com'
   },
   {
     type: 'Phone',
-    data: '+1 (832) 356-6010'
+    data: '+1 (234) 345-6789'
   }
 ]

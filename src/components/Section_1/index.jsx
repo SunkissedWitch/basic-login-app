@@ -9,22 +9,22 @@ import Stepper from "../StepperComponent";
 const stepper = [
   {
     title: 'In Store',
-    description: 'See how customers perceive your products on the shelf and shop with them as they go through the store.',
+    description: 'Vivamus bibendum lorem nibh, accumsan consectetur ipsum scelerisque id. Vivamus accumsan tincidunt ex.',
     icon: <BagIcon className='w-7 h-7 stroke-main-blue' />
   },
   {
     title: 'Online',
-    description: 'Conduct user experience testing on mobile apps and websites to ensure your designs match the needs of users.',
+    description: 'Quisque nec nisl luctus, bibendum est id, laoreet metus. Proin congue sapien quis lacus finibus turpis duis.',
     icon: <GlobeIcon className='w-7 h-7 stroke-main-blue' />
   },
   {
     title: 'At Home',
-    description: 'Gain a better understanding of where, why, when, and how customers experience your products in the real world.',
+    description: 'Suspendisse mollis efficitur neque ac mattis. In tempor convallis ipsum in aliquet. Suspendisse nec odio orci.',
     icon: <HouseIcon className='w-7 h-7 stroke-main-blue' />
   },
   {
     title: 'Out and about',
-    description: 'Collect video feedback from customers that provides rich insights into their needs, behaviors, and attitudes.',
+    description: 'Phasellus fermentum libero id nulla interdum accumsan. Praesent congue in nibh eu euismod. Proin sit amet at.',
     icon: <ChatsCircleIcon className='w-7 h-7 stroke-main-blue' />
   }
 ]

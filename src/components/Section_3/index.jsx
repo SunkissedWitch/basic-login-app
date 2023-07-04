@@ -1,6 +1,11 @@
 import { CommentBase } from "../CommentBase";
 import { ProjectorScreenChart } from "../Icons/ProjectorScreenChart";
 
+const descriptionText = {
+  first: `Nulla quis orci quis ipsum accumsan euismod sed mattis nisl. Vestibulum venenatis malesuada urna at eleifend. Praesent id lectus a magna vehicula congue non et lectus.`,
+  second: `Nunc sem metus, efficitur eu gravida at, commodo non mauris. Pellentesque dapibus diam mauris, sit amet placerat arcu semper a. Integer molestie, arcu sit amet commodo nulla.`
+}
+
 const Section3 = () => {
   return (
     <section className="w-full px-[5.75%] sm:px-10 section-3__bg">
@@ -12,8 +17,8 @@ const Section3 = () => {
           <header className='text-xl leading-[1.875rem] sm:text-2xl lg:text-hero-tablet font-bold'>
             Harness the Power of in-the-Moment Research
           </header>
-          <p className='hidden sm:block text-sm font-normal'>Most research methods rely on participants to recall experiences from memory, while EthOS brings researchers into the moments they&apos;re studying and closer to the truth.</p>
-          <p className='hidden sm:block text-sm font-normal'>Take your research out of the lab and into the everyday lives of your customers to unearth pain points and opportunities to innovate that only arise in real-world situations.</p>
+          <p className='hidden sm:block text-sm font-normal'>{descriptionText.first}</p>
+          <p className='hidden sm:block text-sm font-normal'>{descriptionText.second}</p>
         </div>
         <div className="flex mx-auto flex-col w-full relative">
           <CommentBase>
@@ -24,8 +29,8 @@ const Section3 = () => {
           </div>
         </div>
         <div className='sm:hidden flex flex-col gap-y-4 '>
-          <p className='text-sm font-normal leading-7'>Most research methods rely on participants to recall experiences from memory, while EthOS brings researchers into the moments they&apos;re studying and closer to the truth.</p>
-          <p className='text-sm font-normal leading-7'>Take your research out of the lab and into the everyday lives of your customers to unearth pain points and opportunities to innovate that only arise in real-world situations.</p>
+          <p className='text-sm font-normal leading-7'>{descriptionText.first}</p>
+          <p className='text-sm font-normal leading-7'>{descriptionText.second}</p>
         </div>
       </div>
     </section>
