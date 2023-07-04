@@ -15,7 +15,7 @@ const ContactForm = () => {
     },
     reValidateMode: 'onChange'
   })
-  console.log('errors', errors)
+
   const { pattern: emailPattern } = emailRule
   const onSubmit = (data) => console.log(data)
 
@@ -66,10 +66,10 @@ const ContactForm = () => {
         </label>
         <textarea
           className='rounded-lg border border-neutral-250 w-full h-36 p-2 focus-visible:ring-0 focus-visible:outline-none focus-visible:border-neutral-350 transition-colors'
-          {...register("description", { maxLength: { value: 5, message: 'Please limit your description to 500 characters.' }})} 
+          {...register("description", { maxLength: { value: 500, message: 'Please limit your description to 500 characters.' }})}
         />
         { errors?.description
-          ? <p className="text-red-500">{errors.description.message}</p>
+          ? <p className="text-red-500">{errors?.description?.message}</p>
           : <TextHelper control={control} />
         }
       </div>

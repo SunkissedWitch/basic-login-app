@@ -12,7 +12,7 @@ const Section3 = () => {
           <header className='text-xl leading-[1.875rem] sm:text-2xl lg:text-hero-tablet font-bold'>
             Harness the Power of in-the-Moment Research
           </header>
-          <p className='hidden sm:block text-sm font-normal'>Most research methods rely on participants to recall experiences from memory, while EthOS brings researchers into the moments they're studying and closer to the truth.</p>
+          <p className='hidden sm:block text-sm font-normal'>Most research methods rely on participants to recall experiences from memory, while EthOS brings researchers into the moments they&apos;re studying and closer to the truth.</p>
           <p className='hidden sm:block text-sm font-normal'>Take your research out of the lab and into the everyday lives of your customers to unearth pain points and opportunities to innovate that only arise in real-world situations.</p>
         </div>
         <div className="flex mx-auto flex-col w-full relative">
@@ -24,7 +24,7 @@ const Section3 = () => {
           </div>
         </div>
         <div className='sm:hidden flex flex-col gap-y-4 '>
-          <p className='text-sm font-normal leading-7'>Most research methods rely on participants to recall experiences from memory, while EthOS brings researchers into the moments they're studying and closer to the truth.</p>
+          <p className='text-sm font-normal leading-7'>Most research methods rely on participants to recall experiences from memory, while EthOS brings researchers into the moments they&apos;re studying and closer to the truth.</p>
           <p className='text-sm font-normal leading-7'>Take your research out of the lab and into the everyday lives of your customers to unearth pain points and opportunities to innovate that only arise in real-world situations.</p>
         </div>
       </div>

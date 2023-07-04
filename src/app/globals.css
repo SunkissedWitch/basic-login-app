@@ -70,6 +70,13 @@ body {
   background-position-y: top;
   background-repeat: no-repeat;
 }
+.contact-form__bg {
+  background-image: url('../static/BGShapes/Section_ContactForm.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: top;
+  background-position-x: center;
+}
 
 @media (min-width: 640px) {
   .section-2__bg {

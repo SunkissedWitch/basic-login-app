@@ -7,7 +7,7 @@ export const User = ({ user }) => {
       <div className='rounded-full relative bg-slate-400 border-slate-950 w-[40px] h-[40px] flex justify-center items-center'>
         {
           user?.avatar
-          ? <Image src={user.avatar} height={40} width={40} />
+          ? <Image src={user.avatar} alt='' height={40} width={40} />
           : <UserIcon
             className='fill-yellow-400 opacity-80'
             width={24}

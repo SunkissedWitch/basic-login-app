@@ -2,7 +2,7 @@ import ContactForm from "../ContactForm";
 
 const ContactFormSection = () => {
   return (
-    <section className='w-full p-10 border border-red-500'>
+    <section className='w-full p-10 contact-form__bg'>
       <div className='container sm:p-10 mx-auto'>
         <div className='flex flex-col justify-between gap-y-10'>
           <div className='font-poppins'>

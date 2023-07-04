@@ -10,7 +10,7 @@ import Image from "next/image"
 export const Footer = () => {
   return (
     <footer className='w-full bg-main-blue-600 text-footer-text text-base leading-5 px-8 sm:px-9'>
-      <div className="my-14 sm:my-16 lg:my-20 flex flex-col sm:flex-row justify-between gap-x-6 gap-y-10">
+      <div className="container mx-auto my-14 sm:my-16 lg:my-20 flex flex-col sm:flex-row justify-between gap-x-6 gap-y-10">
         <div className='flex flex-col gap-y-10 grow'>
           <div className='flex flex-col sm:flex-row justify-between gap-x-6 gap-y-10'>
             <div id='quick-links' className="flex flex-col flex-auto gap-y-8">

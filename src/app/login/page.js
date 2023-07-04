@@ -21,15 +21,12 @@ export default function Login() {
     },
     reValidateMode: "onChange",
   });
-  console.log("errors", errors);
 
   const onSubmit = async (data) => {
-    console.log("data", data);
     try {
-      const response = await axios.post("/login/api", { data }, { withCredentials: true });
-      console.log('response', response)
+      // ToDo: add next behavior
+      await axios.post("/login/api", { data }, { withCredentials: true });
     } catch (error) {
-      console.error("onSubmit [error]:", error);
       setError("root.serverError", {
         type: error?.response?.status,
         message: error?.response?.data?.error || "uncorrect email or password",

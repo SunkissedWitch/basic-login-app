@@ -14,7 +14,7 @@ const Section2 = () => {
           <header className='text-xl sm:text-2xl lg:text-hero-tablet font-bold'>
             Built For The Way People Communicate Today
           </header>
-          <p className='text-sm font-normal pr-5 md:pr-11 pb-4'>When participants feel comfortable, they give honest and open feedback. That's why our apps mimic how people communicate through texting, sending pictures, and sharing videos.</p>
+          <p className='text-sm font-normal pr-5 md:pr-11 pb-4'>When participants feel comfortable, they give honest and open feedback. That&apos;s why our apps mimic how people communicate through texting, sending pictures, and sharing videos.</p>
         </div>
         <div className="flex flex-col w-full sm:max-w-[50%] md:min-w-[50%] flex-shrink-0 sm:flex-auto max-h-[340px] sm:h-[inherit] sm:max-h-[660px] sm:relative section-2__bg">
           <div className="py-[10%] sm:py-8 md:py-16 flex flex-auto justify-center sm:justify-end items-end sm:items-center">

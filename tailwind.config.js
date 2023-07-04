@@ -26,6 +26,7 @@ module.exports = {
         'main-orange': '#F9A226',
         'main-blue': '#0090CF',
         'main-blue-600': '#006DA5',
+        'neutral-75': '#F8F8F8',
         'neutral-250': '#e0e0e0',
         'neutral-350': '#bdbdbd',
         // 'bBlue-50': '#e5f3fa',

@@ -29,3 +29,5 @@ export const StyledPasswordInput = forwardRef(({ register, id, required, rules, 
     </>
   )
 })
+
+StyledPasswordInput.displayName = 'StyledPasswordInput';
